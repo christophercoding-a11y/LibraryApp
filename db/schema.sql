@@ -45,10 +45,10 @@ CREATE TABLE book (
     edition ENUM ('1st edition', '2nd edition', '3rd edition', '4th edition') DEFAULT '1st edition',
     edition_year YEAR,
     binding ENUM ('paperback', 'hardback', 'e-book') DEFAULT 'paperback',
-    rating ENUM ('1','2','3','4','5') DEFAULT '1'
+    rating ENUM ('1','2','3','4','5') DEFAULT '1',
     language ENUM  ('english', 'japanese', 'korean') DEFAULT 'english',
     num_pages SMALLINT UNSIGNED NOT NULL,
-    qty TINYINT UNSIGNED NOT NULL
+    qty TINYINT UNSIGNED NOT NULL,
     cover_image MEDIUMTEXT,
     date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_update TIMESTAMP CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -59,7 +59,7 @@ CREATE TABLE book (
 
 CREATE TABLE book_to_genre (
     book_id SMALLINT UNSIGNED NOT NULL,
-    genre_id TINYINT UNSIGNED NOT NULL
+    genre_id TINYINT UNSIGNED NOT NULL,
     date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_update TIMESTAMP CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT fk_book_bg FOREIGN KEY (book_id) REFERENCES book (book_id),
