@@ -10,13 +10,7 @@ CREATE TABLE format (
     CONSTRAINT pk_format PRIMARY KEY (format_id)
 );
 
-CREATE TABLE qty (
-    qty_id TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
-    qty TINYINT NOT NULL,
-    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    last_update TIMESTAMP CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    CONSTRAINT pk_qty PRIMARY KEY (qty_id)
-);
+
 
 
 
@@ -55,7 +49,8 @@ CREATE TABLE book (
     binding ENUM ('paperback', 'hardback', 'e-book') DEFAULT 'paperback',
     rating ENUM ('1','2','3','4','5') DEFAULT '1'
     language ENUM  ('english', 'japanese', 'korean') DEFAULT 'english',
-    num_pages TINYINT NOT NULL,
+    num_pages SMALLINT UNSIGNED NOT NULL,
+    qty TINYINT UNSIGNED NOT NULL
     cover_image MEDIUMTEXT,
     date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_update TIMESTAMP CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
