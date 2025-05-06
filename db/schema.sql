@@ -12,8 +12,6 @@ CREATE TABLE format (
 
 
 
-
-
 CREATE TABLE genre (
     genre_id TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
     genre VARCHAR(20),
