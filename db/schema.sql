@@ -57,7 +57,7 @@ CREATE TABLE book (
     CONSTRAINT pk_book PRIMARY KEY (book_id),
     CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES publisher (publisher_id),
     CONSTRAINT fk_publisher FOREIGN KEY (publisher_id) REFERENCES publisher (publisher_id)
-)
+);
 
 CREATE TABLE book_to_genre (
     book_id SMALLINT UNSIGNED NOT NULL,
@@ -66,7 +66,7 @@ CREATE TABLE book_to_genre (
     last_update TIMESTAMP CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT fk_book_bg FOREIGN KEY (book_id) REFERENCES book (book_id),
     CONSTRAINT fk_genre_bg FOREIGN KEY (genre_id) REFERENCES genre (genre_id)
-)
+);
 
 
 

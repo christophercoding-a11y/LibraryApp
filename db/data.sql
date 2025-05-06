@@ -107,20 +107,20 @@ insert into book(
     cover_image
 )
 values
-('absolute batman',	2 , 2, 2024	'1st edition', 2024, 'paperback', 5, 'english', 176, 10, 'batman.jpeg'),
-('deathnote', 3,	3, 2003, '1st edition', 2003,' hardback', 5, 'japanese', 200, 12, 'deathnote.jpeg'),
-('goosebumps welcome to the deadhouse', 4, 4, 1992, '1st edition	1992',	'paperback', 5,	'english', 123, 18, 'goosebumps.jpeg'),
-('cat in the hat', 5, 5, 1957,'	1st edition	1957', 'hardback', 5, 'english', 61, 45, 'cat.jpeg'),
-('invincible', 6, 6,	2005, '4th edition', 2023,'paperback', 3,' english', 144, 22, 'invincible.jpeg'),
-('diary of the wimpy kid', 7,7, 2007, '1st edition', 2007, 'paperback' , 3, 'english' 244, 14, 'wimpykid.jpeg'),
-('berserk', 8, 8, 1986, '1st edition', 2003, 'paperback', 4, 'japanese' 224, 20, 'berserk.jpeg'),
-('green eggs and ham', 4, 5,	1960, '1st edition', 1960,	'hardback',	5,	'english', 62, 11, 'greeneggs.jpeg'),
-('tower of god', 9, 9, null,'2nd edition', 2023,	'e-book', 2, 'korean', 272, 8, 'towergod.jpeg'),
+('absolute batman',	2 , 2, 2024, '1st edition', 2024, 'paperback', 5, 'english', 176, 10, 'batman.jpeg'),
+('deathnote', 3, 3, 2003, '1st edition', 2003,' hardback', 5, 'japanese', 200, 12, 'deathnote.jpeg'),
+('goosebumps welcome to the deadhouse', 4, 4, 1992, '1st edition', 1992, 'paperback', 5, 'english', 123, 18, 'goosebumps.jpeg'),
+('cat in the hat', 5, 5, 1957, '1st edition', 1957, 'hardback', 5, 'english', 61, 45, 'cat.jpeg'),
+('invincible', 6, 6, 2005, '4th edition', 2023,'paperback', 3,' english', 144, 22, 'invincible.jpeg'),
+('diary of the wimpy kid', 7, 7, 2007, '1st edition', 2007, 'paperback' , 3, 'english' 244, 14, 'wimpykid.jpeg'),
+('berserk', 8, 8, 1986, '1st edition', 2003, 'paperback', 4, 'japanese', 224, 20, 'berserk.jpeg'),
+('green eggs and ham', 4, 5, 1960, '1st edition', 1960,	'hardback',	5,	'english', 62, 11, 'greeneggs.jpeg'),
+('tower of god', 9, 9, null,'2nd edition', 2023, 'e-book', 2, 'korean', 272, 8, 'towergod.jpeg'),
 ('ordeal', 10, 9, null, null, null, 'e-book', 3,'english', 90, 11, 10, 'ordeal.jpeg'),
 ('harry potter and the prisoner of azkaban' 1, 1, 1999, '1st edition', 1999,	'hardback', 4,	'english'	435,  27, 'harry_porter2.jpeg')
-('vagabond', 11, 10,	1998, '3rd edition', 2008,	'paperback', 3, 'japanese', 728, 14, 'vagabond.jpeg'),
+('vagabond', 11, 10, 1998, '3rd edition', 2008,	'paperback', 3, 'japanese', 728, 14, 'vagabond.jpeg'),
 ('absolute superman', 12, 2, 2024, '1st edition', 2024, 'hardback' 5, 'english', 664, 28, 'superman.jpeg'),
-("charlotte's web", 1952, '4th edition', 2001, 'hardback'	5,	'english ' 184, 16, "charlotte's_web.jpeg");
+("charlotte's web", 1952, '4th edition', 2001, 'hardback' 5, 'english', 184, 16, "charlotte's_web.jpeg");
 
 
 INSERT INTO book_to_genre (book_id, genre_id)
