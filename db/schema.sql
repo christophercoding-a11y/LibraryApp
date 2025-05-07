@@ -14,7 +14,7 @@ CREATE TABLE format (
 
 CREATE TABLE genre (
     genre_id TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
-    genre VARCHAR(20),
+    genre VARCHAR(50),
     date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT pk_genre PRIMARY KEY (genre_id)
@@ -54,7 +54,7 @@ CREATE TABLE book (
     date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT pk_book PRIMARY KEY (book_id),
-    CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES publisher (publisher_id),
+    CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES author (author_id),
     CONSTRAINT fk_publisher FOREIGN KEY (publisher_id) REFERENCES publisher (publisher_id)
 );
 
@@ -67,9 +67,8 @@ CREATE TABLE book_to_genre (
     CONSTRAINT fk_genre_bg FOREIGN KEY (genre_id) REFERENCES genre (genre_id)
 );
 
-ALTER TABLE genre
-MODIFY genre VARCHAR(50);
 
-
-
-
+-- resetting auto increment
+set @num:= 0;
+UPDATE my_table SET id = @num:= (@num + 1);
+ALTER TABLE my_table AUTO_INCREMENT = 1;
