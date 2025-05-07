@@ -149,21 +149,6 @@ INSERT INTO book(
     cover_image
 )
 values
-INSERT INTO book(
-    title,
-    author_id,
-    publisher_id,
-    copyright_year,
-    edition,
-    edition_year,
-    binding,
-    rating,
-    language,
-    num_pages,
-    qty, 
-    cover_image
-)
-values
 ('deathnote', 3, 3, 2003, '1st edition', 2003,'hardback', 5, 'japanese', 200, 12, 'deathnote.jpeg');
 INSERT INTO book(
     title,
