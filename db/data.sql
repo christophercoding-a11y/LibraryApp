@@ -166,7 +166,6 @@ INSERT INTO book(
 )
 values
 ('goosebumps welcome to the deadhouse', 4, 4, 1992, '1st edition', 1992, 'paperback', 5, 'english', 123, 18, 'goosebumps.jpeg');
-
 INSERT INTO book(
     title,
     author_id,
