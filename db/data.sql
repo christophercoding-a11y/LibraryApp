@@ -13,18 +13,42 @@ VALUES ('fantasy');
 
 INSERT INTO genre (genre)
 VALUES
-('superhero'),
-('mystery'),
-('psychological thriller'),
-('horror'),
-('children literature'),
-('comedy'),
-('action'),
-('dark fantasy'),
-('adventure'),
-('supernatural'),
-('shonen'),
-('historical'),
+('superhero');
+INSERT INTO genre (genre)
+VALUES
+('mystery');
+INSERT INTO genre (genre)
+VALUES
+('psychological thriller');
+INSERT INTO genre (genre)
+VALUES
+('horror');
+INSERT INTO genre (genre)
+VALUES
+('children literature');
+INSERT INTO genre (genre)
+VALUES
+('comedy');
+INSERT INTO genre (genre)
+VALUES
+('action');
+INSERT INTO genre (genre)
+VALUES
+('dark fantasy');
+INSERT INTO genre (genre)
+VALUES
+('adventure');
+INSERT INTO genre (genre)
+VALUES
+('supernatural');
+INSERT INTO genre (genre)
+VALUES
+('shonen');
+INSERT INTO genre (genre)
+VALUES
+('historical');
+INSERT INTO genre (genre)
+VALUES
 ('martial arts');
 
 INSERT INTO publisher (publisher)

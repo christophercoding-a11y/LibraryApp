@@ -67,6 +67,9 @@ CREATE TABLE book_to_genre (
     CONSTRAINT fk_genre_bg FOREIGN KEY (genre_id) REFERENCES genre (genre_id)
 );
 
+ALTER TABLE genre
+MODIFY genre VARCHAR(50);
+
 
 
 
