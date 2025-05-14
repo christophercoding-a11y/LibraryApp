@@ -1,6 +1,7 @@
 const express = require('express')
 const server = express()
 const helmet = require('helmet')
+const router = require('./routes/router')
 const cors = require('cors')
 const port = process.env.port || 3005
 
@@ -17,6 +18,8 @@ server.use(helmet.contentSecurityPolicy({
 server.use(cors())
     .use(express.json())
     .use(express.urlencoded({extended: true}))
+
+server.use('/', router)
 
 
 server.listen(port, ()=> console.log(`Porty over here in Room ${port}`))

@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "The backend for the library project",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
