@@ -85,8 +85,7 @@ const bookDao = {
                 }
             }
         )
-    },
-    
+    }
 }
 
 module.exports = bookDao
