@@ -85,6 +85,26 @@ const bookDao = {
                 }
             }
         )
+    },
+    sort: (res, table)=> {
+        con.execute(
+            `select ${table}.book_id, ${table}.title, a.author, p.publisher, ${table}.copyright_year, ${table}.edition, ${table}.edition_year, ${table}.binding, ${table}.rating, ${table}.language, ${table}.num_pages, ${table}.cover_image
+            from ${table}
+            join author a using (author_id)
+            join publisher p using (publisher_id)
+            order by a.author`,
+            (error, rows)=> {
+                if (!error) {
+                    if (rows.length === 1) {
+                        res.json(...rows)
+                    } else {
+                        res.json(rows)
+                    }
+                } else {
+                    console.log('DAO ERROR:', error)
+                }
+            }
+        )
     }
 }
 

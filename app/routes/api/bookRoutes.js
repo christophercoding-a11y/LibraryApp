@@ -8,14 +8,24 @@ router.get('/', (req, res)=> {
     dao.findBooks(res, dao.table)
 })
 
-// localhost:3005/api/book/id
-router.get('/:id', (req, res)=> {
-    dao.findbookById(res, dao.table, req.params.id)
+
+
+router.get('/count', (req, res)=> {
+    dao.countAll(res, dao.table)
 })
+
 
 router.get('/binding/:binding', (req, res)=> {
     dao.findByBinding(res, dao.table, req.params.binding)
 })
 
+router.get('/sort', (req, res)=> {
+    dao.sort(res, dao.table)
+})
+
+
+router.get('/:id', (req, res)=> {
+    dao.findbookById(res, dao.table, req.params.id)
+})
 
 module.exports = router
