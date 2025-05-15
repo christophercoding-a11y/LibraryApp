@@ -21,8 +21,7 @@ const daoCommon = {
 
     findById: (res, table, id)=> {
         con.execute(
-            `select * from ${table}, where ${table}_id = ?;`,
-            [id],
+            `select * from ${table} where ${table}_id = ${id};`,
             (error, rows)=> {
                 if (!error) {
                     if (rows.length === 1) {

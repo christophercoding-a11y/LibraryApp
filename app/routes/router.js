@@ -7,13 +7,15 @@ const port = process.env.port || 3005
 router.get('/api', (req, res)=> {
     res.json({
         'Books': `http://localhost:${port}/api/book`,
-        'author': `http://localhost:${port}/api/author`
+        'author': `http://localhost:${port}/api/author`,
+        'publisher': `http://localhost:${port}/api/publisher`,
     })
 })
 
 const endpoints = [
     'book',
-    'author'
+    'author',
+    'publisher'
 ]
 
 

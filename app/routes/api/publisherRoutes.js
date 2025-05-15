@@ -1,18 +1,16 @@
 const express = require('express')
 const router = express.Router()
 
+const { publisherDao: dao } = require('../../daos/dao')
 
-const { authorDao: dao } = require('../../daos/dao')
-
-// localhost3005:/api/author
 router.get('/', (req, res)=> {
     dao.findAll(res, dao.table)
 })
 
-
 router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
+
 
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
