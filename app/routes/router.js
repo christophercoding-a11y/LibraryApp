@@ -10,7 +10,8 @@ router.get('/api', (req, res)=> {
         'author': `http://localhost:${port}/api/author`,
         'publisher': `http://localhost:${port}/api/publisher`,
         'genre': `http://localhost:${port}/api/genre`,
-        'format': `http://localhost${port}/api/format`
+        'format': `http://localhost:${port}/api/format`
+        
     })
 })
 

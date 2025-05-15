@@ -1,15 +1,16 @@
+
 const con = require('../../config/dbconfig')
 
 const formatDao = {
     table: 'format',
 
-    findBooksByGenre: (res, table, genre) => {
+    findBooksByFormat: (res, table, format) => {
         con.execute(
-            `select b.book_id, g.genre
+            `select b.book_id, f.format
             from book b
-            join book_to_genre bg on b.book_id = bg.book_id
-            join genre g on g.genre_id = bg.genre_id
-            where g.genre = ${genre};`,
+            join book_to_format bf on b.book_id = bf.book_id
+            join format f on f.format_id = bf.format_id
+            where f.format = ${format};`,
             (error, rows)=> {
                 if (!error) {
                     if (rows.length === 1) {
