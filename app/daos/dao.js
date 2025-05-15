@@ -15,11 +15,24 @@ const publisherDao = {
     ...require('./api/publisherDao')
 }
 
+const genreDao = {
+    ...daoCommon,
+    ...require('./api/genreDao')
+}
+
+const formatDao = {
+    ...daoCommon,
+    ...require('./api/formatDao')
+}
+
+
 
 
 
 module.exports = {
     bookDao,
     authorDao,
-    publisherDao
+    publisherDao,
+    genreDao,
+    formatDao
 }

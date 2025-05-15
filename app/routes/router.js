@@ -9,13 +9,17 @@ router.get('/api', (req, res)=> {
         'Books': `http://localhost:${port}/api/book`,
         'author': `http://localhost:${port}/api/author`,
         'publisher': `http://localhost:${port}/api/publisher`,
+        'genre': `http://localhost:${port}/api/genre`,
+        'format': `http://localhost${port}/api/format`
     })
 })
 
 const endpoints = [
     'book',
     'author',
-    'publisher'
+    'publisher',
+    'genre',
+    'format'
 ]
 
 

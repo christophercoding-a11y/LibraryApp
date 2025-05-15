@@ -363,3 +363,48 @@ values
 (13, 13), (13, 14), (13, 12),
 (14, 2), (14, 8),
 (15, 6);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(1, 1), (1, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(2, 1);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(3, 1), (3, 2);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(4, 1), (4, 2);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(5, 1), (5, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(6, 1), (6, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(7, 1);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(8, 1), (8, 2);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(9, 1), (9, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(10, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(11, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(12, 1), (12, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(13, 1), (13, 3);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(14, 1);
+
+INSERT INTO book_to_format (book_id, format_id)
+values(15, 1), (15, 3);

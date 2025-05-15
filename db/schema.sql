@@ -67,6 +67,17 @@ CREATE TABLE book_to_genre (
     CONSTRAINT fk_genre_bg FOREIGN KEY (genre_id) REFERENCES genre (genre_id)
 );
 
+CREATE TABLE book_to_format (
+    book_id SMALLINT UNSIGNED NOT NULL,
+    format_id TINYINT UNSIGNED NOT NULL,
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_book_bf FOREIGN KEY (book_id) REFERENCES book (book_id),
+    CONSTRAINT fk_format_bf FOREIGN KEY (format_id) REFERENCES format (format_id)
+);
+
+
+
 
 -- resetting auto increment
 set @num:= 0;
