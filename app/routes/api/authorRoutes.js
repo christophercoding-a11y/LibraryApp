@@ -14,6 +14,10 @@ router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
+router.get('/author/:author', (req, res)=> {
+    dao.findBooksByAuthor(res, dao.table, req.params.author)
+})
+
 router.get('/:id', (req, res)=> {
     dao.findById(res, dao.table, req.params.id)
 })
