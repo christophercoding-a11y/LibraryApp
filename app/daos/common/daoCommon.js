@@ -78,7 +78,40 @@ const daoCommon = {
                 }
             )
         }
+    },
+    
+    update: (req, res, table)=> {
+        const id = req.params.id
+
+        if (isNaN(id)) {
+            res.json({
+                "error": true,
+                "message": "Id must be a number"
+            })
+        } else if (Object.keys(req.body).length === 0) {
+            res.json({
+                "error": true,
+                "true": "No fields to update"
+            })
+        } else {
+            const fields = Object.keys(req.body)
+            const values = Object.values(req.body)
+
+            con.execute(
+                `UPDATE ${table} SET ${fields.join(' = ?, ')} = ? WHERE ${table}_id = ?;`,
+                [...values, id],
+                (error, dbres)=> {
+                    if(!error) {
+                        res.send(`Changed ${dbres.changedRows} row(s)`)
+                    } else {
+                        console.log(`${table}Dao error: `, error)
+                        res.send('Error updating record')
+                    }
+                }
+            )
+        }
     }
+
 }
 
 module.exports = daoCommon
