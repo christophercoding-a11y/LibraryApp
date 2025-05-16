@@ -20,7 +20,6 @@ router.get('/binding/:binding', (req, res)=> {
 })
 
 
-
 router.get('/sort', (req, res)=> {
     dao.sort(res, dao.table)
 })
@@ -28,6 +27,11 @@ router.get('/sort', (req, res)=> {
 
 router.get('/:id', (req, res)=> {
     dao.findbookById(res, dao.table, req.params.id)
+})
+
+
+router.post('/post', (req, res)=> {
+    dao.create(req, res, dao.table)
 })
 
 module.exports = router
