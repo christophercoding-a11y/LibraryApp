@@ -408,3 +408,4 @@ values(14, 1);
 
 INSERT INTO book_to_format (book_id, format_id)
 values(15, 1), (15, 3);
+

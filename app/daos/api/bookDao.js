@@ -86,6 +86,27 @@ const bookDao = {
             }
         )
     },
+    findByLanguage:(res, table, language)=> {
+        con.execute(
+            `select ${table}.book_id, ${table}.title, a.author, p.publisher, ${table}.copyright_year, ${table}.edition, ${table}.edition_year, ${table}.binding, ${table}.rating, ${table}.language, ${table}.num_pages, ${table}.cover_image
+            from ${table}
+            join author a using (author_id)
+            join publisher p using (publisher_id)
+            where ${table}.language = '${language}'
+            order by ${table}.book_id`,
+            (error, rows)=> {
+                if (!error) {
+                    if (rows.length === 1) {
+                        res.json(...rows)
+                    } else {
+                        res.json(rows)
+                    }
+                } else {
+                    console.log('DAO ERROR:', error)
+                }
+            }
+        )
+    },
     sort: (res, table)=> {
         con.execute(
             `select ${table}.book_id, ${table}.title, a.author, p.publisher, ${table}.copyright_year, ${table}.edition, ${table}.edition_year, ${table}.binding, ${table}.rating, ${table}.language, ${table}.num_pages, ${table}.cover_image

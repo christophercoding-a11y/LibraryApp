@@ -20,6 +20,13 @@ router.get('/binding/:binding', (req, res)=> {
 })
 
 
+
+router.get('/language/:language', (req, res)=> {
+    dao.findByLanguage(res, dao.table, req.params.language)
+})
+
+
+
 router.get('/sort', (req, res)=> {
     dao.sort(res, dao.table)
 })
