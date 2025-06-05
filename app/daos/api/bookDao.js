@@ -39,11 +39,11 @@ const bookDao = {
                         genres.push(obj.genre)
                     })
 
-                    con.execute(
-                `select b.book_id, f.format
+        con.execute(
+            `select b.book_id, f.format
             from book b
-            JOIN book_to_format bf ON b.book_id = bf.book_id
-            JOIN format f ON f.format_id = bf.format_id
+            join book_to_format bf on b.book_id = bf.book_id
+            join format f ON f.format_id = bf.format_id
             where b.book_id = ${id};`,
             (error, rows)=> {
                 if (!error) {
@@ -52,8 +52,7 @@ const bookDao = {
                     })
                 }
             }
-
-                    )
+                )
 
                     con.execute(
                     `select b.book_id, b.title, a.author, p.publisher, b.copyright_year, b.edition, b.edition_year, b.binding, b.rating, b.language, b.num_pages, b.cover_image
