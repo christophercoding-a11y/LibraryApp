@@ -8,6 +8,7 @@ import Home from "./components/Home"
 import AllBooks from "./components/AllBooks"
 import Error from "./components/Error"
 import axios from "axios"
+import BookSingle from "./components/BookSingle"
 
 
 
@@ -28,8 +29,10 @@ const App =()=> {
             <Header />
             <Routes>
                 <Route path="/" element={ <Home /> } />
-                <Route path="*" element={ <Error /> } />
                 <Route path="/book" element={ <AllBooks books={books} />}/>
+                <Route path="/book/:id" element={ <BookSingle />} />
+
+                <Route path="*" element={ <Error /> } />
             </Routes>
             <Footer />
         </>
