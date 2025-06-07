@@ -7,11 +7,11 @@ body {
     font-family: "Merriweather", serif;
 }
 
-.nav-link {
+.btn-link {
     color: #000000;
 }
 
-.nav-link:hover {
+.btn-link:hover {
     color: darkblue;
     transition: color 0.3s ease; 
 }
@@ -45,6 +45,17 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     color: #3b2f2f;
+}
+
+.bookSingle-link {
+    padding: 10px 16px;
+    font-size: large;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bookSingle-link:hover {
+    color: #0b5ed7; 
+    transform: translateY(-2px);
 }
 
 
