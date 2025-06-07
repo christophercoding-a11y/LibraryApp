@@ -16,7 +16,10 @@ body {
     transition: color 0.3s ease; 
 }
 
-
+.icon {
+    margin-right: 8px;
+    font-size: xxx-large;
+}
 
 
 .book-heading {
