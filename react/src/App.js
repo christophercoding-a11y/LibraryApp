@@ -22,7 +22,6 @@ const App =()=> {
         
         axios.get(url).then(res => setBooks(res.data))
     }, [])
-    console.log(books)
 
     return (
         <>

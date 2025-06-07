@@ -1,0 +1,70 @@
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: "Merriweather", serif;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: darkblue;
+    transition: color 0.3s ease; 
+}
+
+
+
+
+.book-heading {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+
+.book-card {
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-title {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3b2f2f;
+}
+
+
+
+#errorMain {
+    min-height: 100vh;
+}
+
+#errorMain .container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+#errorMain .error {
+    font-size: 1.1rem;
+    padding: 15px 20px;
+}
+
+
+.footer {
+    padding: 40px 0
+}
+
+
+

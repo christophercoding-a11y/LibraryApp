@@ -24,30 +24,33 @@ const BookSingle =()=> {
 
 
     const genresListItems = genres.map(genre => {
-        return <li key={ genre } className="list-item power-item">{ genre }</li>
+        return <li key={ genre } className="list-item genre-item">{ genre }</li>
     })
 
     const formatsListItems = formats.map(format => {
-        return <li key={ format } className="list-item power-item">{ format }</li>
+        return <li key={ format } className="list-item format-item">{ format }</li>
     })
 
 
+    
+
 
     return (
-        (
+        
         <main className="main" id="bookSingle">
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h2 className="book-single-heading">{book.title}</h2>
+                        <h2 className="book-single-heading text-capitalize book-title">{book.title}</h2>
                         <img src={`/images/${book.cover_image}`} alt={book.title} className="img-fluid image card-img-top w-50" />
                         
                     </div>
                     <div className="col">
-                        <h3 className="hero-stats text-capitalize">info</h3>
-                        <ul className="hero-stat-list list-group list-group-flush">
-                            <li className="list-group-item">Place of Origin: {`${book.author}`}</li>
-                            <li className="list-group-item">Species: {`${book.copyright_year}`}</li>
+                        <h3 className="book-info text-capitalize">info</h3>
+                        <ul className="book-info-list list-group list-group-flush">
+                            <li className="list-group-item">Author: {`${book.author}`}</li>
+                            <li className="list-group-item">Publisher: {`${book.publisher}`}</li>
+                            <li className="list-group-item">Copyright Year: {`${book.copyright_year}`}</li>
                             <li className="list-group-item">Edition: {`${book.edition}`}</li>
                             <li className="list-group-item">Edition Year: {`${book.edition_year}`}</li>
                             <li className="list-group-item">Binding: {`${book.binding}`}</li>
@@ -70,7 +73,7 @@ const BookSingle =()=> {
                 </div>
             </div>
         </main>
-    )
+    
     )
 }
 
