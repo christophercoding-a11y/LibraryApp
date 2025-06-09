@@ -22,7 +22,6 @@ const BookSingle =()=> {
     }, [])
 
 
-
     const genresListItems = genres.map(genre => {
         return <li key={ genre } className="list-item genre-item">{ genre }</li>
     })
@@ -32,7 +31,7 @@ const BookSingle =()=> {
     })
 
 
-    
+
 
 
     return (

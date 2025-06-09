@@ -16,11 +16,19 @@ const Nav = () => {
                 <ul className="dropdown-menu" aria-labelledby="navDropdown">
                     <li><Link to="/" className="dropdown-item">Home</Link></li>
                     <li><Link to="/book" className="dropdown-item">Books</Link></li>
+                    <li><Link to="/author" className="dropdown-item">Authors</Link></li>
+                    <li><Link to="#" className="dropdown-item">Publishers</Link></li>
+                    <li><Link to="#" className="dropdown-item">Genres</Link></li>
+                    <li><Link to="#" className="dropdown-item">Formats</Link></li>
                 </ul>
             </div>
             <nav className="d-none d-lg-flex justify-content-center">
                 <Link to="/" className="btn btn-link">Home</Link>
                 <Link to="/book" className="btn btn-link">Books</Link>
+                <Link to="/author" className="btn btn-link">Authors</Link>
+                <Link to="#" className="btn btn-link">Publishers</Link>
+                <Link to="#" className="btn btn-link">Genres</Link>
+                <Link to="#" className="btn btn-link">Formats</Link>
             </nav>
         </div>
     )
