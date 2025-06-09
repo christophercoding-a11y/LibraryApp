@@ -10,6 +10,7 @@ import Error from "./components/Error"
 import axios from "axios"
 import BookSingle from "./components/BookSingle"
 import AllAuthors from "./components/AllAuthors"
+import BooksbyAuthor from "./components/BooksbyAuthor"
 
 
 
@@ -40,6 +41,7 @@ const App =()=> {
                 <Route path="/" element={ <Home /> } />
                 <Route path="/book" element={ <AllBooks books={books} />}/>
                 <Route path="/author" element={ <AllAuthors authors={authors} />}/>
+                <Route path="/author/:id" element={<BooksbyAuthor  />} />
                 <Route path="/book/:id" element={ <BookSingle />} />
 
                 <Route path="*" element={ <Error /> } />

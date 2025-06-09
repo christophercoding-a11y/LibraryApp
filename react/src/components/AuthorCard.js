@@ -4,13 +4,13 @@ const AuthorCard =(props)=> {
     return (
         <div className="col">
             <div className="card author-card h-100">
-                <img src="https://placehold.co/50x50"alt="placeholder img" class="img-fluid image" />
+                <img src={`/images/${props.img_url}`}alt={props.title} className="img-fluid image card-img-top h-100" />
                 <div className="card-body">
-                    <h2 className="card-title text-capitalize">{props.author}</h2>
+                    <h2 className="card-title author-name text-capitalize">{props.author}</h2>
                 </div>
                 
             <footer className="card-footer">
-                    <Link to={`/book/${props.id}`} className="bookSingle-link link-unstyled">Click here to view books by this author</Link>
+                    View <Link to={`/author/${props.id}`} className="authorCard-link">books</Link> with this author
                 </footer>
             </div>
         </div>

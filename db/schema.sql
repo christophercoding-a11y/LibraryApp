@@ -76,6 +76,12 @@ CREATE TABLE book_to_format (
     CONSTRAINT fk_format_bf FOREIGN KEY (format_id) REFERENCES format (format_id)
 );
 
+ALTER TABLE author
+    ADD COLUMN img_url MEDIUMTEXT;
+
+    ALTER TABLE publisher
+    ADD COLUMN img_url MEDIUMTEXT;
+
 
 
 

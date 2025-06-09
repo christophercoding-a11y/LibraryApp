@@ -22,7 +22,7 @@ body {
 }
 
 
-.book-heading {
+.book-heading, .author-heading {
     margin-bottom: 10px;
     font-size: 2.5rem;
 }
@@ -39,6 +39,23 @@ body {
     transform: scale(1.03);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
+.author-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.author-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.author-name {
+    font-size: 1.25rem;
+}
+
+
 
 .book-title {
     margin-top: 10px;

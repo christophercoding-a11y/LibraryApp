@@ -8,6 +8,7 @@ const AllAuthors = ({ authors })=> {
                 key={author.author_id}
                 id={author.author_id}
                 author={author.author}
+                img_url={author.img_url}
             />
         )
     })

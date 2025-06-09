@@ -409,3 +409,18 @@ values(14, 1);
 INSERT INTO book_to_format (book_id, format_id)
 values(15, 1), (15, 3);
 
+update author set img_url = 'jk_rowling.jpeg' where author_id = 1;
+update author set img_url = 'scott_snyder.jpeg' where author_id = 2;
+update author set img_url = 'tsugumi_ohba.jpeg' where author_id = 3;
+update author set img_url = 'rl_stine.jpeg' where author_id = 4;
+update author set img_url = 'dr_seuss.jpeg' where author_id = 5;
+update author set img_url = 'robert_kirkman.jpeg' where author_id = 6;
+update author set img_url = 'jeff_kinney.jpeg' where author_id = 7;
+update author set img_url = 'kentaro_miura.jpeg' where author_id = 8;
+update author set img_url = 'lee_jong.jpeg' where author_id = 9;
+update author set img_url = 'takekiko_luninoue.jpeg' where author_id = 10;
+update author set img_url = 'geoff_johns.jpeg' where author_id = 11;
+update author set img_url = 'eb_white.jpeg' where author_id = 12;
+update author set img_url = 'brent_bristol.jpeg' where author_id = 13;
+
+
