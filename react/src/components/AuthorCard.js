@@ -10,7 +10,7 @@ const AuthorCard =(props)=> {
                 </div>
                 
             <footer className="card-footer">
-                    View <Link to={`/author/${props.id}`} className="authorCard-link">books</Link> with this author
+                    View <Link to={`/author/${props.id}`} className="authorCard-link">books</Link> by this author
                 </footer>
             </div>
         </div>

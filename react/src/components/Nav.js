@@ -1,36 +1,65 @@
 import { Link } from "react-router";
 
-const Nav = () => {
+const Nav = (props) => {
     return (
-        <div className="text-end mt-3">
-            <div className="dropdown d-lg-none mb-5">
-                <button 
-                    className="btn btn-secondary dropdown-toggle" 
-                    type="button" 
-                    id="navDropdown" 
-                    data-bs-toggle="dropdown" 
+        <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container-fluid">
+                <button
+                    className="navbar-toggler ms-auto"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
                     aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                    select tab
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <ul className="dropdown-menu" aria-labelledby="navDropdown">
-                    <li><Link to="/" className="dropdown-item">Home</Link></li>
-                    <li><Link to="/book" className="dropdown-item">Books</Link></li>
-                    <li><Link to="/author" className="dropdown-item">Authors</Link></li>
-                    <li><Link to="#" className="dropdown-item">Publishers</Link></li>
-                    <li><Link to="#" className="dropdown-item">Genres</Link></li>
-                    <li><Link to="#" className="dropdown-item">Formats</Link></li>
-                </ul>
+                <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li className="nav-item  ms-auto">
+                            <Link to="/" className="nav-link">Home</Link>
+                        </li>
+                        <li className="nav-item  ms-auto">
+                            <Link to="/book" className="nav-link">Books</Link>
+                        </li>
+                        <li className="nav-item ms-auto">
+                            <Link to="/author" className="nav-link">Authors</Link>
+                        </li>
+                        <li className="nav-item ms-auto">
+                            <Link to="/publisher" className="nav-link">Publishers</Link>
+                        </li>
+                        <li className="nav-item dropdown ms-auto">
+                            <button
+                                className="nav-link dropdown-toggle btn btn-link ms-auto"
+                                id="navbarDropdown"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Genres
+                            </button>
+                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><Link to="#" className="dropdown-item">Fantasy</Link></li>
+                                <li><Link to="#" className="dropdown-item">Superhero</Link></li>
+                                <li><Link to="#" className="dropdown-item">Mystery</Link></li>
+                                <li><Link to="#" className="dropdown-item ">Psychological</Link></li>
+                                <li><Link to="#" className="dropdown-item">Horror</Link></li>
+                                <li><Link to="#" className="dropdown-item">Children's Literature</Link></li>
+                                <li><Link to="#" className="dropdown-item">Comedy</Link></li>
+                                <li><Link to="#" className="dropdown-item">Action</Link></li>
+                                <li><Link to="#" className="dropdown-item ">Dark Fantasy</Link></li>
+                                <li><Link to="#" className="dropdown-item">Adventure</Link></li>
+                                <li><Link to="#" className="dropdown-item">Supernatural</Link></li>
+                                <li><Link to="#" className="dropdown-item">Shonen</Link></li>
+                                <li><Link to="#" className="dropdown-item">Historical</Link></li>
+                                <li><Link to="#" className="dropdown-item">Martial Arts</Link></li>
+                            </ul>
+                            
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav className="d-none d-lg-flex justify-content-center">
-                <Link to="/" className="btn btn-link">Home</Link>
-                <Link to="/book" className="btn btn-link">Books</Link>
-                <Link to="/author" className="btn btn-link">Authors</Link>
-                <Link to="#" className="btn btn-link">Publishers</Link>
-                <Link to="#" className="btn btn-link">Genres</Link>
-                <Link to="#" className="btn btn-link">Formats</Link>
-            </nav>
-        </div>
+        </nav>
     )
 }
 

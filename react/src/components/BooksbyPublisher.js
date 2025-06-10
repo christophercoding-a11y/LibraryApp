@@ -4,20 +4,20 @@ import axios from "axios";
 import BookCard from "./BookCard";
 
 
-const BooksbyAuthor =()=> {
+const BooksbyPublisher =()=> {
 
-    const [bookauthor, setBookAuthor ] = useState([])
+    const [bookpublisher, setBookPublisher ] = useState([])
 
     const params = useParams()
 
     useEffect(()=> {
-        const url = `http://localhost:3005/api/author/author/${params.id}`
-        axios.get(url).then(res => setBookAuthor(res.data))
+        const url = `http://localhost:3005/api/publisher/publisher/${params.id}`
+        axios.get(url).then(res => setBookPublisher(res.data))
     }, [])
 
     // console.log(bookauthor)
 
-    const BookCardComponents = bookauthor.map(book => {
+    const BookCardComponents = bookpublisher.map(book => {
         return (
             <BookCard
                 key={book.book_id}
@@ -31,7 +31,7 @@ const BooksbyAuthor =()=> {
     return(
         <main className="main" id="booksbyauthorMain">
             <div className="container">
-                <h2 className="text-capitalize author-heading text-capitalize">books by author</h2>
+                <h2 className="text-capitalize author-heading text-capitalize">books by publisher</h2>
                 <div className="row row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     { BookCardComponents }
                 </div>
@@ -40,4 +40,4 @@ const BooksbyAuthor =()=> {
     )
 }
 
-export default BooksbyAuthor
+export default BooksbyPublisher

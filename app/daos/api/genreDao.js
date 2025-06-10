@@ -3,7 +3,7 @@ const con = require('../../config/dbconfig')
 const genreDao = {
     table: 'genre',
 
-    findBooksByGenre: (res, table, genre) => {
+    findBooksByGenre: (res, table, id) => {
         con.execute(
             `select b.book_id, b.title, a.author, p.publisher, b.qty, b.copyright_year, b.edition, b.edition_year, b.binding, b.rating, b.language, b.num_pages, b.cover_image, g.genre
             from book b
@@ -11,7 +11,7 @@ const genreDao = {
             join publisher p using (publisher_id)
             join book_to_genre bg on b.book_id = bg.book_id
             join genre g on g.genre_id = bg.genre_id
-            where g.genre = '${genre}'
+            where g.genre_id = '${id}'
             order by b.book_id;`,
             (error, rows)=> {
                 if (!error) {

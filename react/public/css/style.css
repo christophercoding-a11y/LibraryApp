@@ -7,11 +7,14 @@ body {
     font-family: "Merriweather", serif;
 }
 
-.btn-link {
+
+
+.nav-link {
     color: #000000;
+    text-decoration: underline;
 }
 
-.btn-link:hover {
+.nav-link:hover {
     color: darkblue;
     transition: color 0.3s ease; 
 }

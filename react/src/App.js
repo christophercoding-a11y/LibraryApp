@@ -11,6 +11,10 @@ import axios from "axios"
 import BookSingle from "./components/BookSingle"
 import AllAuthors from "./components/AllAuthors"
 import BooksbyAuthor from "./components/BooksbyAuthor"
+import BooksbyPublisher from "./components/BooksbyPublisher"
+import AllPublishers from "./components/AllPublishers"
+
+
 
 
 
@@ -34,6 +38,14 @@ const App =()=> {
         axios.get(url).then(res => setAuthors(res.data))
     }, [])
 
+    const [ publishers, setPublishers ] = useState([])
+
+    useEffect(()=> {
+        const url = 'http://localhost:3005/api/publisher'
+
+        axios.get(url).then(res => setPublishers(res.data))
+    }, [])
+
     return (
         <>
             <Header />
@@ -41,8 +53,12 @@ const App =()=> {
                 <Route path="/" element={ <Home /> } />
                 <Route path="/book" element={ <AllBooks books={books} />}/>
                 <Route path="/author" element={ <AllAuthors authors={authors} />}/>
+                <Route path="/publisher" element={ <AllPublishers publishers={publishers} />}/>
                 <Route path="/author/:id" element={<BooksbyAuthor  />} />
+                <Route path="/publisher/:id" element={<BooksbyPublisher  />} />
                 <Route path="/book/:id" element={ <BookSingle />} />
+
+                
 
                 <Route path="*" element={ <Error /> } />
             </Routes>

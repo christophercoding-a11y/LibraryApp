@@ -11,8 +11,8 @@ router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
-router.get('/publisher/:publisher', (req, res)=> {
-    dao.findBooksByPublisher(res, dao.table, req.params.publisher)
+router.get('/publisher/:id', (req, res)=> {
+    dao.findBooksByPublisher(res, dao.table, req.params.id)
 })
 
 
