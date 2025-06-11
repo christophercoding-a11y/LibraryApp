@@ -34,7 +34,7 @@ body {
 }
 
 
-.book-heading, .author-heading {
+.book-heading, .author-heading, .genre-heading {
     margin-bottom: 10px;
     font-size: 2.5rem;
 }

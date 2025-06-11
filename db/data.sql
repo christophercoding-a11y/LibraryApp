@@ -432,7 +432,11 @@ update publisher set img_url = 'skybound_entertainment.png' where publisher_id =
 update publisher set img_url = 'amulet_books.png' where publisher_id = 7;
 update publisher set img_url = 'hakusensha.png' where publisher_id = 8;
 update publisher set img_url = 'naver_webtoon.png' where publisher_id = 9;
-update publisher set img_url = 'vic_medium.png' where publisher_id = 10;
+update publisher set img_url = 'viz_media.png' where publisher_id = 10;
 update publisher set img_url = 'harper_brothers.png' where publisher_id = 11;
+
+UPDATE publisher
+SET publisher = 'Viz Media'
+WHERE publisher = 'Vic Medium';
 
 

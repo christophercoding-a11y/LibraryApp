@@ -1,5 +1,5 @@
 import { useState, useEffect, use } from "react"
-import { Routes, Route } from "react-router"
+import { Routes, Route, } from "react-router"
 
 
 import Header from "./components/Header"
@@ -12,6 +12,7 @@ import BookSingle from "./components/BookSingle"
 import AllAuthors from "./components/AllAuthors"
 import BooksbyAuthor from "./components/BooksbyAuthor"
 import BooksbyPublisher from "./components/BooksbyPublisher"
+import BooksByGenre from "./components/BooksbyGenre"
 import AllPublishers from "./components/AllPublishers"
 
 
@@ -25,7 +26,6 @@ const App =()=> {
     useEffect(()=> {
         const url = 'http://localhost:3005/api/book'
 
-        
         axios.get(url).then(res => setBooks(res.data))
     }, [])
 
@@ -46,6 +46,9 @@ const App =()=> {
         axios.get(url).then(res => setPublishers(res.data))
     }, [])
 
+
+
+
     return (
         <>
             <Header />
@@ -56,9 +59,13 @@ const App =()=> {
                 <Route path="/publisher" element={ <AllPublishers publishers={publishers} />}/>
                 <Route path="/author/:id" element={<BooksbyAuthor  />} />
                 <Route path="/publisher/:id" element={<BooksbyPublisher  />} />
+
+                <Route path="/genre/:id" element={ <BooksByGenre />} />
+
+
                 <Route path="/book/:id" element={ <BookSingle />} />
 
-                
+            
 
                 <Route path="*" element={ <Error /> } />
             </Routes>
