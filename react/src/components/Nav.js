@@ -38,7 +38,7 @@ const Nav = (props) => {
                             >
                                 Genres
                             </button>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul className="dropdown-menu genre-dropdown d-block" aria-labelledby="navbarDropdown">
                                 <li><Link to={`/genre/1`} className="dropdown-item text-end sm-end dropdown-link">Fantasy</Link></li>
                                 <li><Link to={`/genre/2`} className="dropdown-item text-end sm-end dropdown-link">Superhero</Link></li>
                                 <li><Link to={`/genre/3`} className="dropdown-item text-end sm-end dropdown-link">Mystery</Link></li>
