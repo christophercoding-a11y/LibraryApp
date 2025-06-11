@@ -7,7 +7,7 @@ const AllPublishers = ({ publishers })=> {
             <PublisherCard
                 key={publisher.publisher_id}
                 id={publisher.publisher_id}
-                publisher={publisher.author}
+                publisher={publisher.publisher}
                 img_url={publisher.img_url}
             />
         )

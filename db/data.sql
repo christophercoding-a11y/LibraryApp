@@ -261,7 +261,7 @@ INSERT INTO book(
     cover_image
 )
 values
-('tower of god', 9, 9, null,'2nd edition', 2023, 'e-book', 2, 'korean', 272, 8, 'towergod.jpeg');
+('tower of god', 9, 9, 2010,'2nd edition', 2023, 'e-book', 2, 'korean', 272, 8, 'towergod.jpeg');
 INSERT INTO book(
     title,
     author_id,
@@ -422,5 +422,17 @@ update author set img_url = 'takekiko_luninoue.jpeg' where author_id = 10;
 update author set img_url = 'geoff_johns.jpeg' where author_id = 11;
 update author set img_url = 'eb_white.jpeg' where author_id = 12;
 update author set img_url = 'brent_bristol.jpeg' where author_id = 13;
+
+update publisher set img_url = 'bloomsbury.png' where publisher_id = 1;
+update publisher set img_url = 'dc_comic.png' where publisher_id = 2;
+update publisher set img_url = 'shueisha.png' where publisher_id = 3;
+update publisher set img_url = 'scholastic.png' where publisher_id = 4;
+update publisher set img_url = 'random_house.png' where publisher_id = 5;
+update publisher set img_url = 'skybound_entertainment.png' where publisher_id = 6;
+update publisher set img_url = 'amulet_books.png' where publisher_id = 7;
+update publisher set img_url = 'hakusensha.png' where publisher_id = 8;
+update publisher set img_url = 'naver_webtoon.png' where publisher_id = 9;
+update publisher set img_url = 'vic_medium.png' where publisher_id = 10;
+update publisher set img_url = 'harper_brothers.png' where publisher_id = 11;
 
 

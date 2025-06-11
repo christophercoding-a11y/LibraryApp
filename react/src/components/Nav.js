@@ -16,7 +16,7 @@ const Nav = (props) => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item  ms-auto">
                             <Link to="/" className="nav-link">Home</Link>
                         </li>
@@ -39,22 +39,21 @@ const Nav = (props) => {
                                 Genres
                             </button>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><Link to="#" className="dropdown-item">Fantasy</Link></li>
-                                <li><Link to="#" className="dropdown-item">Superhero</Link></li>
-                                <li><Link to="#" className="dropdown-item">Mystery</Link></li>
-                                <li><Link to="#" className="dropdown-item ">Psychological</Link></li>
-                                <li><Link to="#" className="dropdown-item">Horror</Link></li>
-                                <li><Link to="#" className="dropdown-item">Children's Literature</Link></li>
-                                <li><Link to="#" className="dropdown-item">Comedy</Link></li>
-                                <li><Link to="#" className="dropdown-item">Action</Link></li>
-                                <li><Link to="#" className="dropdown-item ">Dark Fantasy</Link></li>
-                                <li><Link to="#" className="dropdown-item">Adventure</Link></li>
-                                <li><Link to="#" className="dropdown-item">Supernatural</Link></li>
-                                <li><Link to="#" className="dropdown-item">Shonen</Link></li>
-                                <li><Link to="#" className="dropdown-item">Historical</Link></li>
-                                <li><Link to="#" className="dropdown-item">Martial Arts</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Fantasy</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Superhero</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Mystery</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Psychological</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Horror</Link></li>
+                                <li><Link to="#" className="dropdown-item dropdown-link">Children's Literature</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Comedy</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Action</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Dark Fantasy</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Adventure</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Supernatural</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Shonen</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Historical</Link></li>
+                                <li><Link to="#" className="dropdown-item text-end sm-end dropdown-link">Martial Arts</Link></li>
                             </ul>
-                            
                         </li>
                     </ul>
                 </div>

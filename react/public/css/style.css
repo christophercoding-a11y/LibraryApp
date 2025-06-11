@@ -19,6 +19,15 @@ body {
     transition: color 0.3s ease; 
 }
 
+.dropdown-link {
+    text-decoration: underline;
+}
+
+.dropdown-link:hover {
+    color: darkblue;
+    transition: color 0.3s ease; 
+}
+
 .icon {
     margin-right: 8px;
     font-size: xxx-large;
@@ -44,8 +53,9 @@ body {
 }
 
 .author-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
 }
 
 .author-card:hover {
@@ -54,9 +64,26 @@ body {
 }
 
 
+.publisher-name {
+    font-size: 1.50rem;
+}
+
+.publisher-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publisher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
 .author-name {
     font-size: 1.25rem;
 }
+
 
 
 
