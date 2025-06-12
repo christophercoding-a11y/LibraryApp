@@ -435,6 +435,11 @@ update publisher set img_url = 'naver_webtoon.png' where publisher_id = 9;
 update publisher set img_url = 'viz_media.png' where publisher_id = 10;
 update publisher set img_url = 'harper_brothers.png' where publisher_id = 11;
 
+insert into book_to_genre(book_id, genre_id) values (16, 1), (16, 10);
+
+insert into book_to_format(book_id, genre_id) values (16, 1), (16, 3);
+
+
 UPDATE publisher
 SET publisher = 'Viz Media'
 WHERE publisher = 'Vic Medium';

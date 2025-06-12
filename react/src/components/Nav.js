@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const Nav = (props) => {
+const Nav = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
@@ -32,13 +32,13 @@ const Nav = (props) => {
                         <li className="nav-item dropdown ms-auto">
                             <button
                                 className="nav-link dropdown-toggle btn btn-link ms-auto"
-                                id="navbarDropdown"
+                                id="genreDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 Genres
                             </button>
-                            <ul className="dropdown-menu genre-dropdown d-block" aria-labelledby="navbarDropdown">
+                            <ul className="dropdown-menu genre-dropdown" aria-labelledby="genreDropdown">
                                 <li><Link to={`/genre/1`} className="dropdown-item text-end sm-end dropdown-link">Fantasy</Link></li>
                                 <li><Link to={`/genre/2`} className="dropdown-item text-end sm-end dropdown-link">Superhero</Link></li>
                                 <li><Link to={`/genre/3`} className="dropdown-item text-end sm-end dropdown-link">Mystery</Link></li>
@@ -52,6 +52,21 @@ const Nav = (props) => {
                                 <li><Link to={`/genre/12`} className="dropdown-item text-end sm-end dropdown-link">Shonen</Link></li>
                                 <li><Link to={`/genre/13`} className="dropdown-item text-end sm-end dropdown-link">Historical</Link></li>
                                 <li><Link to={`/genre/14`} className="dropdown-item text-end sm-end dropdown-link">Martial Arts</Link></li>
+                            </ul>
+                        </li>
+                        <li className="nav-item dropdown ms-auto">
+                            <button
+                                className="nav-link dropdown-toggle btn btn-link ms-auto"
+                                id="formatDropdown"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Formats
+                            </button>
+                            <ul className="dropdown-menu format-dropdown" aria-labelledby="formatDropdown">
+                                <li><Link to={`/format/1`} className="dropdown-item text-end sm-end dropdown-link">Physical</Link></li>
+                                <li><Link to={`/format/2`}className="dropdown-item text-end sm-end dropdown-link">E-Book</Link></li>
+                                <li><Link to={`/format/3`} className="dropdown-item text-end sm-end dropdown-link">Audio</Link></li>
                             </ul>
                         </li>
                     </ul>

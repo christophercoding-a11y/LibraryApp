@@ -13,8 +13,8 @@ router.get('/count', (req, res)=> {
     dao.countAll(res, dao.table)
 })
 
-router.get('/format/:format', (req, res)=> {
-    dao.findBooksByFormat(res, dao.table, req.params.format)
+router.get('/format/:id', (req, res)=> {
+    dao.findBooksByFormat(res, dao.table, req.params.id)
 })
 
 router.get('/:id', (req, res)=> {

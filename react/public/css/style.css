@@ -110,7 +110,7 @@ body {
     transform: translateY(-2px);
 }
 
-.genre-dropdown {
+/* .genre-dropdown {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -121,6 +121,19 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+.format-dropdown {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.format-dropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
 
 
 

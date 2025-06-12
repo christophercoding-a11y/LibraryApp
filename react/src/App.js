@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react"
+import { useState, useEffect, } from "react"
 import { Routes, Route, } from "react-router"
 
 
@@ -13,6 +13,7 @@ import AllAuthors from "./components/AllAuthors"
 import BooksbyAuthor from "./components/BooksbyAuthor"
 import BooksbyPublisher from "./components/BooksbyPublisher"
 import BooksByGenre from "./components/BooksbyGenre"
+import BooksByFormat from "./components/BooksbyFormat"
 import AllPublishers from "./components/AllPublishers"
 
 
@@ -55,15 +56,13 @@ const App =()=> {
             <Routes>
                 <Route path="/" element={ <Home /> } />
                 <Route path="/book" element={ <AllBooks books={books} />}/>
+                <Route path="/book/:id" element={ <BookSingle />} />
                 <Route path="/author" element={ <AllAuthors authors={authors} />}/>
                 <Route path="/publisher" element={ <AllPublishers publishers={publishers} />}/>
                 <Route path="/author/:id" element={<BooksbyAuthor  />} />
                 <Route path="/publisher/:id" element={<BooksbyPublisher  />} />
-
                 <Route path="/genre/:id" element={ <BooksByGenre />} />
-
-
-                <Route path="/book/:id" element={ <BookSingle />} />
+                <Route path="/format/:id" element={ <BooksByFormat />} />
 
             
 
