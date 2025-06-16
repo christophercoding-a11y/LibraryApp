@@ -21,6 +21,8 @@ const BookSingle =()=> {
         })
     }, [])
 
+    console.log(book)
+
 
     const genresListItems = genres.map(genre => {
         return <li key={ genre } className="list-item genre-item">{ genre }</li>
@@ -54,7 +56,9 @@ const BookSingle =()=> {
                             <li className="list-group-item">Edition Year: {`${book.edition_year}`}</li>
                             <li className="list-group-item">Binding: {`${book.binding}`}</li>
                             <li className="list-group-item">Language: {`${book.language}`}</li>
+                            <li className="list-group-item">Rating: {`${book.rating}`}</li>
                             <li className="list-group-item">Num of Pages: {`${book.num_pages}`}</li>
+                            <li className="list-group-item">Quantity: {`${book.qty}`}</li>
                             { genres.length && <li className="list-group-item">
                                 Genres:
                                 <ul className="genres-list">
