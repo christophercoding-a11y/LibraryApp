@@ -15,6 +15,7 @@ import BooksbyPublisher from "./components/BooksbyPublisher"
 import BooksByGenre from "./components/BooksbyGenre"
 import BooksByFormat from "./components/BooksbyFormat"
 import AllPublishers from "./components/AllPublishers"
+import BookForm from "./components/BookForm"
 
 
 
@@ -63,6 +64,8 @@ const App =()=> {
                 <Route path="/publisher/:id" element={<BooksbyPublisher  />} />
                 <Route path="/genre/:id" element={ <BooksByGenre />} />
                 <Route path="/format/:id" element={ <BooksByFormat />} />
+                <Route path="/bookForm" element={ <BookForm />} />
+
 
             
 

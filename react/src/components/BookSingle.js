@@ -21,7 +21,6 @@ const BookSingle =()=> {
         })
     }, [])
 
-    console.log(book)
 
 
     const genresListItems = genres.map(genre => {
