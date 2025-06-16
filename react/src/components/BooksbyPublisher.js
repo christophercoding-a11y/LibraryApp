@@ -15,7 +15,7 @@ const BooksbyPublisher =()=> {
         axios.get(url).then(res => setBookPublisher(res.data))
     }, [])
 
-    // console.log(bookauthor)
+    console.log(bookpublisher)
 
     const BookCardComponents = bookpublisher.map(book => {
         return (
