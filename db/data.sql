@@ -437,7 +437,10 @@ update publisher set img_url = 'harper_brothers.png' where publisher_id = 11;
 
 insert into book_to_genre(book_id, genre_id) values (16, 1), (16, 10);
 
-insert into book_to_format(book_id, genre_id) values (16, 1), (16, 3);
+insert into book_to_format(book_id, format_id) values (16, 1), (16, 3);
+
+delete from book_to_format 
+where book_id = 4
 
 
 UPDATE publisher

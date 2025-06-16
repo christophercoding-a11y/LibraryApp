@@ -9,9 +9,6 @@ body {
 
 
 
-
-
-
 .nav-link {
     color: #000000;
     text-decoration: underline;
@@ -108,6 +105,15 @@ body {
 .bookSingle-link:hover {
     color: #0b5ed7; 
     transform: translateY(-2px);
+}
+
+.form-link {
+    color: #000000;
+}
+
+.form-link:hover {
+    color: darkblue;
+    transition: color 0.3s ease; 
 }
 
 /* .genre-dropdown {
