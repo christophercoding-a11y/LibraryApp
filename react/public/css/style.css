@@ -3,9 +3,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fdfaf6;
+    background: linear-gradient(to right, #f0f8ff, #e6f7ff);
     font-family: "Merriweather", serif;
 }
+
+
 
 .book-cover {
     width: 50%;
@@ -58,10 +60,10 @@ body {
 }
 
 
+
 .book-card {
     border: 2px solid #8b5e3c;
     border-radius: 8px;
-    box-shadow: 3px 5px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -104,7 +106,6 @@ body {
 
 
 
-
 .book-title {
     margin-top: 10px;
     font-size: 1.8rem;
@@ -131,6 +132,40 @@ body {
     color: darkblue;
     transition: color 0.3s ease; 
 }
+
+#bookFormMain {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.book-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.binding-box, .author-box,.species-box {
+    padding: 1rem;
+    border-radius: 8px;
+    /* background-color: #f1f3f5; */
+}
+
+.binding-box .form-check, .author-box .form-check, .species-box .form-check {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-text {
+    color: #000;
+    font-size: large;
+}
+
+
+.rating-text {
+    font-size: large;
+}
+
 
 /* .genre-dropdown {
     opacity: 0;
@@ -173,7 +208,32 @@ body {
     font-size: 1.1rem;
     padding: 15px 20px;
 }
+/* 
+@media (min-width: 768px) {
+    .book-form {
+        padding: 2rem;
+    }
 
+    .author-box, .binding-box, .species-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-check-inline {
+        margin-right: 1rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .book-form {
+        padding: 3rem;
+    }
+
+    .button-row .btn {
+        width: 200px;
+    }
+} */
 
 .footer {
     padding: 40px 0
