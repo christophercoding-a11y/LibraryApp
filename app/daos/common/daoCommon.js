@@ -64,8 +64,6 @@ const daoCommon = {
             const fields = Object.keys(req.body)
             const values = Object.values(req.body)
 
-            console.log(fields)
-            console.log(values)
 
             con.execute(
                 `insert into ${table} set ${fields.join(' = ?, ')} = ?;`,
