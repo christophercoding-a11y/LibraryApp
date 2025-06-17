@@ -42,7 +42,7 @@ const BookSingle =()=> {
                 <div className="row">
                     <div className="col">
                         <h2 className="book-single-heading text-capitalize book-title">{book.title}</h2>
-                        <img src={`/images/${book.cover_image}`} alt={book.title} className="img-fluid image card-img-top w-50" />
+                        <img src={`/images/${book.cover_image}`} alt={book.title} className="img-fluid image card-img-top book-cover" />
                         
                     </div>
                     <div className="col">

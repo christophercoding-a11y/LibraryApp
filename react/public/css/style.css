@@ -7,6 +7,22 @@ body {
     font-family: "Merriweather", serif;
 }
 
+.book-cover {
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+.book-cover {
+    width: 70%;
+}
+}
+
+@media (max-width: 768px) {
+.book-cover {
+    width: 100%;
+}
+}
+
 
 
 .nav-link {

@@ -22,7 +22,7 @@ const AllBooks =({ books })=> {
     return (
         <main className="main" id="allBooksMain">
             <div className="container">
-                <h2 className="text-capitalize author-heading text-center text-capitalize">books</h2>
+                
                 <p className="text-end">
                     <Link to="/bookForm" className="form-link">Add a book</Link>
                 </p>
