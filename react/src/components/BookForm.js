@@ -191,7 +191,7 @@ const BookForm =(props)=> {
                             <label htmlFor="numPages" className="form-label">Number of Pages</label>
                             <input 
                                 id="numPages" 
-                                type="text"
+                                type="number"
                                 className="form-control" 
                                 name="num_pages"
                                 value={props.formData.num_pages}
@@ -203,9 +203,11 @@ const BookForm =(props)=> {
                             <label htmlFor="Quantity" className="form-label">Quantity</label>
                             <input 
                                 id="Quantity" 
-                                type="text"
+                                type="number"
                                 className="form-control" 
                                 name="qty"
+                                min="1"
+                                max="1000"
                                 value={props.formData.qty}
                                 onChange={props.handleChange}
                                 required
@@ -244,7 +246,7 @@ const BookForm =(props)=> {
                     </div>
                     <div className="row button-row">
                         <div className="col">
-                            <button type="submit" className="btn btn-primary">Add Book</button>
+                            <button type="submit" className="btn btn-primary addbook-btn">Add Book</button>
                         </div>
                     </div>
                 </form>

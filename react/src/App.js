@@ -59,7 +59,7 @@ const App =()=> {
         rating: 1,
         language: '',
         num_pages: '',
-        qty: '',
+        qty: 1,
         cover_image: ''
     })
 

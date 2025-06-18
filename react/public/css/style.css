@@ -3,14 +3,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
     font-family: "Merriweather", serif;
 }
+
+
 
 
 .book-cover {
     width: 50%;
 }
+
+
+.addbook-btn{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
 
 
 
@@ -134,6 +143,8 @@ body {
     transition: color 0.3s ease; 
 }
 
+
+
 .book-form {
     background-color: #fff;
     padding: 2rem;
@@ -141,11 +152,20 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 576px) {
-.book-form .image-form[type="file"] {
+
+
+
+
+@media (max-width: 596px) {
+.book-form {
+    padding: 5px;
+}
+.book-form .image-form {
     width: 100%;
+    max-width: 100%;
 }
 }
+
 
 
 .book-container {
