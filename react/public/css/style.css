@@ -3,15 +3,16 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+    background-color: #f5f5f5;
     font-family: "Merriweather", serif;
 }
-
 
 
 .book-cover {
     width: 50%;
 }
+
+
 
 @media (max-width: 992px) {
 .book-cover {
@@ -133,64 +134,46 @@ body {
     transition: color 0.3s ease; 
 }
 
-#bookFormMain {
-    padding: 2rem;
-    border-radius: 10px;
-}
-
 .book-form {
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 576px) {
+.book-form .image-form[type="file"] {
+    width: 100%;
+}
+}
+
+
+.book-container {
+    padding: 30px 40px;
 }
 
 .binding-box, .author-box,.species-box {
     padding: 1rem;
     border-radius: 8px;
-    /* background-color: #f1f3f5; */
 }
 
 .binding-box .form-check, .author-box .form-check, .species-box .form-check {
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
+    padding: 15px 20px;
+    margin-top: 10px;
 }
 
+
+
 .form-text {
-    color: #000;
     font-size: large;
+    font-weight: 600;
+    color: #333;
 }
 
 
 .rating-text {
     font-size: large;
 }
-
-
-/* .genre-dropdown {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-
-.genre-dropdown.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.format-dropdown {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-
-.format-dropdown.show {
-    opacity: 1;
-    transform: translateY(0);
-} */
-
 
 
 
@@ -204,36 +187,11 @@ body {
 }
 
 
+
 #errorMain .error {
     font-size: 1.1rem;
     padding: 15px 20px;
 }
-/* 
-@media (min-width: 768px) {
-    .book-form {
-        padding: 2rem;
-    }
-
-    .author-box, .binding-box, .species-box {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .form-check-inline {
-        margin-right: 1rem;
-    }
-}
-
-
-@media (min-width: 992px) {
-    .book-form {
-        padding: 3rem;
-    }
-
-    .button-row .btn {
-        width: 200px;
-    }
-} */
 
 .footer {
     padding: 40px 0
