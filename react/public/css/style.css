@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    background-color: lightgray;
     font-family: "Merriweather", serif;
 }
 
@@ -124,13 +124,14 @@ body {
 }
 
 .bookSingle-link {
+    color: #000000;
     padding: 10px 16px;
     font-size: large;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .bookSingle-link:hover {
-    color: #0b5ed7; 
+    color: darkblue;
     transform: translateY(-2px);
 }
 
@@ -146,7 +147,7 @@ body {
 
 
 .book-form {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);

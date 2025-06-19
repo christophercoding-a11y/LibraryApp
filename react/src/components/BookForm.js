@@ -83,7 +83,7 @@ const BookForm =(props)=> {
                                 className="form-control" 
                                 name="copyright_year"
                                 min="1900"
-                                max="2050"
+                                max="2035"
                                 step="1"
                                 value={props.formData.copyright_year}
                                 onChange={props.handleChange}
@@ -239,6 +239,7 @@ const BookForm =(props)=> {
                                     type="file"
                                     name="cover_image"
                                     onChange={props.handleChange}
+                                    value={props.cover_image}
                                     required
                                 />
                             </div>
