@@ -439,6 +439,10 @@ update book set cover_image = 'grinch.jpeg' where book_id = 17;
 
 update book set cover_image = 'harry_porter4.jpeg' where book_id = 18;
 
+update book set cover_image = 'goosebumps2.jpeg' where book_id = 21;
+
+update book set cover_image = 'batmanlaughs.jpeg' where book_id = 22;
+
 insert into book_to_genre(book_id, genre_id) values (16, 1), (16, 10);
 
 insert into book_to_format(book_id, format_id) values (16, 1), (16, 3);
@@ -451,6 +455,17 @@ insert into book_to_genre(book_id, genre_id) values (18, 1), (18, 10);
 
 
 insert into book_to_format(book_id, format_id) values (18, 1), (18, 3);
+
+insert into book_to_genre(book_id, genre_id) values (22, 2), (22, 8);
+
+
+insert into book_to_format(book_id, format_id) values (22, 1)
+
+insert into book_to_genre(book_id, genre_id) values (21, 5), (21, 6);
+
+
+insert into book_to_format(book_id, format_id) values (21, 1), (21, 2)
+
 
 delete from book_to_format 
 where book_id = 4

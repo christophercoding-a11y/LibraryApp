@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgray;
+    background-color: #e6ecf0;
     font-family: "Merriweather", serif;
 }
 
@@ -147,7 +147,7 @@ body {
 
 
 .book-form {
-    background-color: #f9f9f9;
+      background-color: #ffffff; 
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -178,7 +178,7 @@ body {
     border-radius: 8px;
 }
 
-.binding-box .form-check, .author-box .form-check, .species-box .form-check {
+.binding-box, .author-box .author-check, .publisher-check {
     padding: 15px 20px;
     margin-top: 10px;
 }

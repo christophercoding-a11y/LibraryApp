@@ -69,23 +69,23 @@ const App =()=> {
     })
 
     const resetData=()=> {
-        // setIsPostSuccess({
-        //     isSuccess: false,
-        //     id: 0
-        // })
+        setIsPostSuccess({
+            isSuccess: false,
+            id: 0
+        })
 
         setFormData({
         title: '',
         author_id: 0,
         publisher_id: 0,
-        copyright_year: '',
+        copyright_year: 1900,
         edition: '',
         edition_year: 1900,
         binding: '',
         rating: 1,
         language: '',
         num_pages: '',
-        qty: '',
+        qty: 1,
         cover_image: ''
         })
     }
@@ -123,7 +123,7 @@ const App =()=> {
             <Routes>
                 <Route path="/" element={ <Home /> } />
                 <Route path="/book" element={ <AllBooks books={books} />}/>
-                <Route path="/book/:id" element={ <BookSingle />} />
+                <Route path="/book/:id" element={ <BookSingle /> } />
                 <Route path="/author" element={ <AllAuthors authors={authors} />}/>
                 <Route path="/publisher" element={ <AllPublishers publishers={publishers} />}/>
                 <Route path="/author/:id" element={<BooksbyAuthor  />} />

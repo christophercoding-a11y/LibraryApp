@@ -16,7 +16,7 @@ const BookForm =(props)=> {
 
     const authorDivs = authors.map(author => {
         return (
-            <div className="form-check form-check-inline " key={author.author_id}>
+            <div className=" author-check form-check form-check-inline " key={author.author_id}>
                 <input
                     className="form-check-input"
                     type="radio"
@@ -36,7 +36,7 @@ const BookForm =(props)=> {
     
     const publisherDivs = publishers.map(publisher => {
         return (
-            <div className="form-check form-check-inline" key={publisher.publisher_id}>
+            <div className=" publisher-check form-check form-check-inline" key={publisher.publisher_id}>
                 <input
                     className="form-check-input"
                     type="radio"
@@ -135,7 +135,7 @@ const BookForm =(props)=> {
                         <div className="col">
                             <div className="binding-box">
                                 <p className="form-text">Binding</p>
-                                <div className="form-check">
+                                <div className="form-check binding-check">
                                     <input
                                     className="form-check-input"
                                     type="radio"
@@ -233,14 +233,13 @@ const BookForm =(props)=> {
                     <div className="row mb-3">
                         <div className="col">
                             <div className="input-group mb-3">
-                                <span className="input-group-text">Image</span>
+                                <span className="input-group-text">Cover Image</span>
                                 <input
                                     className="form-control image-form"
                                     type="file"
                                     name="cover_image"
                                     onChange={props.handleChange}
                                     value={props.cover_image}
-                                    required
                                 />
                             </div>
                         </div>
