@@ -460,4 +460,6 @@ UPDATE publisher
 SET publisher = 'Viz Media'
 WHERE publisher = 'Vic Medium';
 
-
+UPDATE author
+SET author = 'JK. Rowling'
+WHERE author = 'Jk. Rowling';
