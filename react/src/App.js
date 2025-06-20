@@ -121,15 +121,16 @@ const App =()=> {
         <>
             <Header />
             <Routes>
-                <Route path="/" element={ <Home /> } />
-                <Route path="/book" element={ <AllBooks books={books} />}/>
+                { isPostSuccess.isSuccess && <Route path={`/hero/${isPostSuccess.id}`} element={ <BookSingle />} />}
+                <Route path="/" element={ <Home resetData={ resetData }/> }  /> 
+                <Route path="/book" element={ <AllBooks books={books} resetData={resetData}  />}/>
                 <Route path="/book/:id" element={ <BookSingle /> } />
-                <Route path="/author" element={ <AllAuthors authors={authors} />}/>
-                <Route path="/publisher" element={ <AllPublishers publishers={publishers} />}/>
-                <Route path="/author/:id" element={<BooksbyAuthor  />} />
-                <Route path="/publisher/:id" element={<BooksbyPublisher  />} />
-                <Route path="/genre/:id" element={ <BooksByGenre />} />
-                <Route path="/format/:id" element={ <BooksByFormat />} />
+                <Route path="/author" element={ <AllAuthors authors={authors}  />}/>
+                <Route path="/publisher" element={ <AllPublishers publishers={publishers}  />}/>
+                <Route path="/author/:id" element={<BooksbyAuthor  />}  />
+                <Route path="/publisher/:id" element={<BooksbyPublisher  />}  />
+                <Route path="/genre/:id" element={ <BooksByGenre />}  />
+                <Route path="/format/:id" element={ <BooksByFormat />}  />
                     <Route 
                     path="/bookForm" 
                     element={ <BookForm 
@@ -137,6 +138,7 @@ const App =()=> {
                         handleChange={handleChange} 
                         formData={formData}  
                         isPostSuccess={isPostSuccess}
+                        
                     />} 
                 />
 

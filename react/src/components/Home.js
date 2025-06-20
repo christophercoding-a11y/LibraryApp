@@ -1,4 +1,11 @@
-const Home =()=> {
+import { useEffect } from "react"
+
+const Home =(props)=> {
+    
+    useEffect(()=> {
+        props.resetData()
+    }, [])
+    
     return (
         <main className="main">
             <div className="container">
