@@ -467,8 +467,24 @@ insert into book_to_genre(book_id, genre_id) values (21, 5), (21, 6);
 insert into book_to_format(book_id, format_id) values (21, 1), (21, 2)
 
 
-delete from book_to_format 
-where book_id = 4
+update book set cover_image = 'wimpykid2.jpeg' where book_id = 28;
+
+update book set cover_image = 'swan.jpeg' where book_id = 29;
+
+insert into book_to_genre(book_id, genre_id) values (28, 6), (28, 7);
+
+insert into book_to_format(book_id, format_id) values (28, 1);
+
+insert into book_to_genre(book_id, genre_id) values (29, 6);
+
+insert into book_to_format(book_id, format_id) values (29, 1), (29, 3);
+
+delete from book_to_genre
+where book_id = 28;
+
+UPDATE book
+SET title = 'Diary of a Wimpy Kid: Rodrick Rules'
+WHERE book_id = 28;
 
 
 UPDATE publisher

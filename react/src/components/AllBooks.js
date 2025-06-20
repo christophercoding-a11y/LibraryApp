@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import BookCard from "./BookCard";
 
 const AllBooks =({ books })=> {
+    
 
     const BookCardComponents = books.map(book => {
         return (
@@ -15,6 +16,10 @@ const AllBooks =({ books })=> {
             />
         )
     })
+
+    
+
+
 
 
 
