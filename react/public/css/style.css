@@ -3,8 +3,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e6ecf0;
+    background-color: #dfe6ec;
     font-family: "Merriweather", serif;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
 }
 
 
@@ -147,12 +153,11 @@ body {
 
 
 .book-form {
-      background-color: #ffffff; 
+    background-color: #ffffff; 
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-
 
 
 
@@ -173,12 +178,12 @@ body {
     padding: 30px 40px;
 }
 
-.binding-box, .author-box,.species-box {
+.binding-box,.author-box, .publisher-box {
     padding: 1rem;
     border-radius: 8px;
 }
 
-.binding-box, .author-box .author-check, .publisher-check {
+.author-check, .publisher-check {
     padding: 15px 20px;
     margin-top: 10px;
 }

@@ -16,7 +16,7 @@ const BookForm =(props)=> {
 
     const authorDivs = authors.map(author => {
         return (
-            <div className=" author-check form-check form-check-inline " key={author.author_id}>
+            <div className="author-check form-check form-check-inline " key={author.author_id}>
                 <input
                     className="form-check-input"
                     type="radio"
@@ -60,7 +60,7 @@ const BookForm =(props)=> {
             <div className=" book-container container">
                 <form className="book-form form " onSubmit={ props.handleSubmit }>
                     <div className="row mb-3">
-                        <h5 className="mt-4 mb-3 border-bottom pb-2">📘 Book Details</h5>
+                        <h3 className="section-title mb-3 border-bottom pb-2">📘 Book Details</h3>
                         <div className="col-12 col-md-6 col-lg-4">
                             <label htmlFor="bookTitle" className="form-label">Title</label>
                             <input 
@@ -217,15 +217,15 @@ const BookForm =(props)=> {
                     <div className="row mb-3">
                         <div className="col">
                             <div className="author-box">
-                                <h5 className="mt-4 mb-3 border-bottom pb-2">🖊️ Authors</h5>
+                                <h3 className=" section-title mb-3 border-bottom pb-2">🖊️ Authors</h3>
                                 { authorDivs }
                             </div>
                         </div>
                     </div>
                     <div className="row mb-3">
                         <div className="col">
-                            <div className="species-box">
-                                <h5 className="mt-4 mb-3 border-bottom pb-2">🏢 Publishers</h5>
+                            <div className="publisher-box">
+                                <h3 className=" section-title mb-3 border-bottom pb-2">🏢 Publishers</h3>
                                 { publisherDivs }
                             </div>
                         </div>
