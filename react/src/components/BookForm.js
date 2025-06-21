@@ -246,7 +246,7 @@ const BookForm =(props)=> {
                     </div>
                     <div className="row button-row">
                         <div className="col">
-                            <button type="submit" className="btn btn-primary addbook-btn">Add Book</button>
+                            <button type="submit" className="btn btn-dark addbook-btn">Add Book</button>
                         </div>
                     </div>
                 </form>
