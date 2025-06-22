@@ -58,18 +58,20 @@ const BookSingle =()=> {
                             <li className="list-group-item">Rating: {`${book.rating}`}</li>
                             <li className="list-group-item">Num of Pages: {`${book.num_pages}`}</li>
                             <li className="list-group-item">Quantity: {`${book.qty}`}</li>
-                            { genres.length && <li className="list-group-item">
-                                Genres:
-                                <ul className="genres-list">
-                                    { genresListItems }
-                                </ul>
-                            </li>} 
-                            { formats.length && <li className="list-group-item">
-                                Formats:
-                                <ul className="formats-list">
-                                    { formatsListItems }
-                                </ul>
-                            </li>} 
+
+                            {genres.length > 0  && (
+                                <li className="list-group-item">
+                                    Genres:
+                                    <ul className="genre-list">{genresListItems}</ul>
+                                </li>
+                            )}
+
+                            {formats.length > 0  && (
+                                <li className="list-group-item">
+                                    Formats:
+                                    <ul className="genre-list">{formatsListItems}</ul>
+                                </li>
+                            )}
                         </ul>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ const Header =()=> {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h1 className="heading text-capitalize"> <IoLibrary className="icon" />my library app</h1>
+                        <h1 className="heading text-capitalize">📚my library app</h1>
                     </div>
                     <div className="col">
                         <Nav />

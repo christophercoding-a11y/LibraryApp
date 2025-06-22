@@ -3,6 +3,8 @@ const router = express.Router()
 
 const { bookDao: dao } = require('../../daos/dao')
 
+
+
 // localhost:3005/api/book
 router.get('/', (req, res)=> {
     dao.findBooks(res, dao.table)
