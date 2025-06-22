@@ -1,8 +1,6 @@
 import Nav from "./Nav"
 
 
-import { IoLibrary } from "react-icons/io5";
-
 const Header =()=> {
     return (
         <header className="header" id="header">
