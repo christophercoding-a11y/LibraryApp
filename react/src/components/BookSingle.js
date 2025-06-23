@@ -46,7 +46,7 @@ const BookSingle =()=> {
                         
                     </div>
                     <div className="col">
-                        <h3 className="book-info text-capitalize">info</h3>
+                        <h3 className="book-info text-capitalize">book details</h3>
                         <ul className="book-info-list list-group list-group-flush">
                             <li className="list-group-item">Author: {`${book.author}`}</li>
                             <li className="list-group-item">Publisher: {`${book.publisher}`}</li>

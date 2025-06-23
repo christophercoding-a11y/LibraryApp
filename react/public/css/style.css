@@ -30,8 +30,6 @@ body {
 
 
 
-
-
 @media (max-width: 992px) {
 .book-cover {
     width: 70%;
@@ -67,11 +65,17 @@ body {
 
 
 
+
 .book-heading, .author-heading, .publisher-heading {
     margin-bottom: 10px;
     font-size: 2.5rem;
     color: #3b2f2f;
 }
+
+.book-container {
+    padding: 30px 40px;
+}
+
 
 
 
@@ -151,7 +155,7 @@ body {
 
 
 .book-form {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -164,6 +168,8 @@ body {
     margin-top: 1.5rem;
     font-weight: 600;
 }
+
+
 
 
 .addbook-btn{

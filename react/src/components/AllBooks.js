@@ -31,7 +31,7 @@ const AllBooks =({ books })=> {
                 <p className="text-end">
                     <Link to="/bookForm" className="form-link">Add a book</Link>
                 </p>
-                <h2 className="text-capitalize book-heading text-center">Books</h2>
+                <h2 className="text-capitalize book-heading text-center"> all books</h2>
                 <section className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     { BookCardComponents }
                 </section>
