@@ -1,23 +1,32 @@
+:root {
+    --font: "Merriweather", serif;
+    --prim: #dfe6ec;
+    --prim2: #ffffff;
+    --sec: #000000;
+    --sec2: #333;
+    --hovercolor: #00008B;
+}
+
+
 * { box-sizing: border-box;}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #dfe6ec;
-    font-family: "Merriweather", serif;
+    background-color: var(--prim);
+    font-family: var(--font)
 }
 
 .home-title {
     font-size: 2.5rem;
     font-weight: 700;
-    text-transform: capitalize;
-    margin-bottom: 1rem;
-    color: #333;
+    margin-bottom: 16px;
+    color: var(--sec2)
 }
 
 .home-subtitle {
     font-size: 1.25rem;
-    color: #555;
+    color: var(--sec2)
 }
 
 
@@ -45,22 +54,22 @@ body {
 
 
 .nav-link {
-    color: #000000;
+    color: var(--sec);
     text-decoration: underline;
+    transition: color 0.3s ease
 }
 
 .nav-link:hover {
-    color: darkblue;
-    transition: color 0.3s ease; 
+    color: var(--hovercolor);
 }
 
 .dropdown-link {
     text-decoration: underline;
+    transition: color 0.3s ease
 }
 
 .dropdown-link:hover {
-    color: darkblue;
-    transition: color 0.3s ease; 
+    color: var(--hovercolor);
 }
 
 
@@ -69,7 +78,7 @@ body {
 .book-heading, .author-heading, .publisher-heading {
     margin-bottom: 10px;
     font-size: 2.5rem;
-    color: #3b2f2f;
+    color: var(--sec2)
 }
 
 .book-container {
@@ -101,9 +110,18 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
+.authorCard-link, .publisherCard-link {
+    color: var(--sec);
+    transition: color 0.3s ease
+}
+
+.authorCard-link:hover, .publisherCard-link:hover {
+    color: var(--hovercolor);
+}
+
 
 .publisher-name {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
 }
 
 .publisher-card {
@@ -127,36 +145,35 @@ body {
 .book-title {
     margin-top: 10px;
     font-size: 1.8rem;
-    font-weight: bold;
-    color: #3b2f2f;
+    color: var(--sec2);
 }
 
 .bookSingle-link {
-    color: #000000;
+    color: var(--sec);
     padding: 10px 16px;
     font-size: large;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .bookSingle-link:hover {
-    color: darkblue;
+    color: var(--hovercolor);
     transform: translateY(-2px);
 }
 
 .form-link {
-    color: #000000;
+    color: var(--sec);
+    transition: color 0.3s ease
 }
 
 .form-link:hover {
-    color: darkblue;
-    transition: color 0.3s ease; 
+    color: var(--hovercolor);
 }
 
 
 
 .book-form {
-    background-color: #ffffff;
-    padding: 2rem;
+    background-color: var(--prim2);
+    padding: 32px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -165,7 +182,7 @@ body {
 
 .section-title {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 24px;
     font-weight: 600;
 }
 
@@ -173,7 +190,7 @@ body {
 
 
 .addbook-btn{
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     font-weight: bold;
 }
 
@@ -181,7 +198,7 @@ body {
 
 @media (max-width: 596px) {
 .book-form {
-    padding: 5px;
+    padding: 16px;
 }
 .book-form .image-form {
     width: 100%;
@@ -191,12 +208,8 @@ body {
 
 
 
-.book-container {
-    padding: 30px 40px;
-}
-
 .binding-box,.author-box, .publisher-box {
-    padding: 1rem;
+    padding: 16px;
     border-radius: 8px;
 }
 
@@ -210,7 +223,7 @@ body {
 .form-text {
     font-size: large;
     font-weight: 600;
-    color: #333;
+    color: var(--sec2);
 }
 
 
@@ -230,15 +243,11 @@ body {
 }
 
 
-
 #errorMain .error {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     padding: 15px 20px;
 }
 
 .footer {
     padding: 40px 0
 }
-
-
-
