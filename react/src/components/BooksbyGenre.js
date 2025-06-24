@@ -20,6 +20,8 @@ const BooksByGenre =()=> {
     axios.get(url).then(res => setBookGenre(res.data))
 }, [params.id])
 
+const genreName = bookgenre.length > 0 ? bookgenre[0].genre : "this genre";
+
     const BookCardComponents = bookgenre.map(book => {
         return (
             <BookCard
@@ -34,6 +36,7 @@ const BooksByGenre =()=> {
         return (
         <main className="main" id="allBooksMain">
             <div className="container">
+                <h2 className="text-capitalize author-heading text-capitalize mb-4">all {genreName} books</h2>
                 <section className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     { BookCardComponents }
                 </section>

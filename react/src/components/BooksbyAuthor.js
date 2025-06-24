@@ -17,6 +17,8 @@ const BooksbyAuthor =()=> {
 
     // console.log(bookauthor)
 
+    const authorName = bookauthor.length > 0 ? bookauthor[0].author : "this author";
+
     const BookCardComponents = bookauthor.map(book => {
         return (
             <BookCard
@@ -31,8 +33,8 @@ const BooksbyAuthor =()=> {
     return(
         <main className="main" id="booksbyauthorMain">
             <div className="container">
-                <h2 className="text-capitalize author-heading text-capitalize">books by author</h2>
-                <div className="row row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <h2 className="text-capitalize author-heading text-capitalize mb-4">books by {authorName}</h2>
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     { BookCardComponents }
                 </div>
             </div>

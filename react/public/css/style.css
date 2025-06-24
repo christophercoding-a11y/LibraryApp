@@ -31,6 +31,7 @@ body {
 
 
 
+
 .book-cover {
     width: 50%;
 }
@@ -73,17 +74,11 @@ body {
 }
 
 
-
-
-.book-heading, .author-heading, .publisher-heading {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-    color: var(--sec2)
-}
-
 .book-container {
     padding: 30px 40px;
 }
+
+
 
 
 

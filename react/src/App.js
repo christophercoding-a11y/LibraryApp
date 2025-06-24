@@ -123,7 +123,7 @@ const App =()=> {
             <Routes>
                 { isPostSuccess.isSuccess && <Route path={`/hero/${isPostSuccess.id}`} element={ <BookSingle />} />}
                 <Route path="/" element={ <Home resetData={ resetData }/> }  /> 
-                <Route path="/book" element={ <AllBooks  books={books} resetData= {resetData }/>}/>
+                <Route path="/book" element={ <AllBooks  books={books} resetData={resetData }/>}/>
                 <Route path="/book/:id" element={ <BookSingle /> } />
                 <Route path="/author" element={ <AllAuthors authors={authors}  />}/>
                 <Route path="/publisher" element={ <AllPublishers publishers={publishers}  />}/>

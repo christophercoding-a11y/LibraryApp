@@ -26,7 +26,7 @@ const bookDao = {
         let genres = [];
         let formats = [];
 
-        // Get genres
+        
         con.execute(
             `select g.genre
             FROM book_to_genre bg

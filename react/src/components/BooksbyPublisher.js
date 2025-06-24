@@ -15,7 +15,9 @@ const BooksbyPublisher =()=> {
         axios.get(url).then(res => setBookPublisher(res.data))
     }, [])
 
-    console.log(bookpublisher)
+    // console.log(bookpublisher)
+
+    const publisherName = bookpublisher.length > 0 ? bookpublisher[0].publisher : "this publisher";
 
     const BookCardComponents = bookpublisher.map(book => {
         return (
@@ -31,7 +33,7 @@ const BooksbyPublisher =()=> {
     return(
         <main className="main" id="booksbypublisherMain">
             <div className="container">
-                <h2 className="text-capitalize publisher-heading text-capitalize">books by publisher</h2>
+                <h2 className="text-capitalize publisher-heading text-capitalize mb-4">books by {publisherName}</h2>
                 <div className="row row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     { BookCardComponents }
                 </div>
